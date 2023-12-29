@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 7px 7%;
+}
+
+header {
+  background-color: #f8f8ff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 20px 0 20px;
+}
+@media (max-width: 1000px) {
+  header {
+    z-index: 100;
+  }
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container img {
+  margin-bottom: 10px;
+}
+header .header-container a {
+  text-decoration: none;
+  padding: 5px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+header .header-container a:hover {
+  color: rgb(191, 62, 62);
+}
+@media (max-width: 1000px) {
+  header .header-container nav {
+    background-image: radial-gradient(rgb(158, 161, 156), #9fa29e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: 100;
+    transition: 0.2s height;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  header .header-container nav a {
+    padding: 15px;
+  }
+}
+header .header-container .open-btn {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  header .header-container .open-btn {
+    display: block;
+  }
+}
+header .header-container .close-btn {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  header .header-container .close-btn {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 150px;
+  }
+}
+
+.header-showcase {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)), url(images/trucki1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.header-showcase .header-showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.header-showcase .header-showcase-content h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 45px;
+}
+@media (max-width: 1000px) {
+  .header-showcase .header-showcase-content h1 {
+    font-size: 25px;
+  }
+}
+.header-showcase .header-showcase-content p {
+  color: #fff;
+  padding: 30px 0 30px;
+}
+@media (max-width: 800px) {
+  .header-showcase .header-showcase-content p {
+    padding: 15px 0 15px;
+  }
+}
+.header-showcase .header-showcase-content a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+}
+@media (max-width: 750px) {
+  .header-showcase .header-showcase-content a {
+    text-align: start;
+    padding: 20px 50px 20px;
+  }
+}
+.header-showcase .header-showcase-content .links {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 750px) {
+  .header-showcase .header-showcase-content .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.header-showcase .header-showcase-content .links .link1 {
+  background-color: transparent;
+  padding: 20px 90px 20px;
+  border: 1px solid #fff;
+}
+@media (max-width: 750px) {
+  .header-showcase .header-showcase-content .links .link1 {
+    width: 300px;
+  }
+}
+.header-showcase .header-showcase-content .links .link {
+  background-color: #ff0000;
+  padding: 20px 90px 20px;
+  border: 1px solid transparent;
+}
+@media (max-width: 750px) {
+  .header-showcase .header-showcase-content .links .link {
+    width: 300px;
+  }
+}
+
+/*   SECTION SHOWCASE   */
+.section-showcase {
+  background-image: linear-gradient(silver, #f5f5f5);
+}
+.section-showcase img {
+  width: 100%;
+}
+.section-showcase .section-showcase-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  background-color: whitesmoke;
+  padding: 20px;
+  position: relative;
+  top: -50px;
+}
+@media (max-width: 1200px) {
+  .section-showcase .section-showcase-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    position: relative;
+    top: 100px;
+  }
+}
+@media (max-width: 700px) {
+  .section-showcase .section-showcase-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    position: relative;
+    top: 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .section-showcase .section-showcase-content .section-showcase-detail {
+    border: 1px solid #c0c0c0;
+  }
+  .section-showcase .section-showcase-content .section-showcase-text {
+    padding: 10px;
+  }
+}
+
+/*   SECTION STORY    */
+.section-story {
+  background-image: linear-gradient(rgba(98, 45, 87, 0.8), rgb(17, 17, 18)), url(images/trucki2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 150px 0 150px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.section-story .section-story-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 50px;
+}
+@media (max-width: 1000px) {
+  .section-story .section-story-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.section-story .section-story-text {
+  display: flex;
+  gap: 15px;
+}
+.section-story .section-story-text svg {
+  margin-top: 3px;
+}
+.section-story h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+/*SECTION SERVICES*/
+.section-service {
+  background-image: radial-gradient(rgba(165, 165, 154, 0.8), silver), url(images/trucki2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 100px;
+}
+.section-service h2 {
+  padding-bottom: 50px;
+  font-size: 35px;
+}
+@media (max-width: 500px) {
+  .section-service h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+.section-service .section-service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .section-service .section-service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .section-service .section-service-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.section-service .section-service-detail {
+  display: flex;
+  gap: 20px;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .section-service .section-service-detail {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.section-service .section-service-detail svg {
+  border: 3px dotted red;
+  padding: 10px;
+}
+.section-service .section-service-detail h1 {
+  font-size: 30px;
+}
+.section-service .section-service-detail p {
+  font-size: 15px;
+}
+
+/*  SECTION STATS  */
+.section-stats {
+  background-image: linear-gradient(rgb(255, 255, 255) smoke, rgb(228, 228, 240));
+  padding: 100px 0 100px;
+}
+.section-stats h2 {
+  padding: 0 0 40px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+@media (max-width: 500px) {
+  .section-stats h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+.section-stats .section-stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media (max-width: 1000px) {
+  .section-stats .section-stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .section-stats .section-stats-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.section-stats .section-stats-detail {
+  background-image: radial-gradient(rgb(240, 248, 255), rgb(211, 211, 211));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 3px 8px 8px #c0c0c0;
+  height: 50vh;
+  flex-direction: column;
+  text-align: center;
+}
+.section-stats .section-stats-detail h1 {
+  font-weight: bolder;
+}
+
+/*SECTION REQUEST*/
+.section-request {
+  background-image: radial-gradient(rgba(177, 177, 186, 0.6), ghostwhite), url(images/trucki.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 100px;
+}
+.section-request h1 {
+  margin-bottom: 30px;
+}
+.section-request .section-request-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+@media (max-width: 1000px) {
+  .section-request .section-request-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .section-request .section-request-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.section-request .section-request-detail {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+@media (max-width: 700px) {
+  .section-request .section-request-detail {
+    display: flex;
+    align-items: center;
+  }
+}
+.section-request .section-request-detail p {
+  font-weight: bolder;
+}
+.section-request .section-request-a p {
+  font-size: 17px;
+}
+@media (max-width: 700px) {
+  .section-request .section-request-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+.section-request .section-request-b {
+  background-color: whitesmoke;
+  padding: 40px;
+}
+.section-request .section-request-b .form {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+.section-request .section-request-b .form input {
+  border: 1px solid #999;
+  background: transparent;
+  padding: 20px;
+  outline: none;
+}
+.section-request .section-request-b .form #submit {
+  background: #646363;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* SECTION LOCATION*/
+.section-location .section-location-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 1100px) {
+  .section-location .section-location-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.section-location .section-location-container .section-reference {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  place-items: center;
+  gap: 30px;
+  background: #d21e1e;
+  color: #fff;
+}
+@media (max-width: 1100px) {
+  .section-location .section-location-container .section-reference {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px 0 30px;
+  }
+}
+.section-location img {
+  width: 100%;
+}
+.section-location h3 {
+  font-size: 30px;
+}
+
+/*  SECTION FOOTER  */
+.section-footer {
+  background-image: linear-gradient(silver, ghostwhite);
+  padding: 100px 0 50px;
+}
+.section-footer .section-footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1100px) {
+  .section-footer .section-footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .section-footer .section-footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.section-footer .section-footer-detail p {
+  line-height: 3;
+}
+.section-footer .section-footer-detail p:hover {
+  color: #df0707;
+  cursor: pointer;
+}
+.section-footer .section-footer-detail a {
+  text-decoration: none;
+  color: #000;
+}
+.section-footer .section-footer-detail a:hover {
+  color: #df0707;
+  cursor: pointer;
+}
+.section-footer .section-footer-detail .icons {
+  display: flex;
+  gap: 20px;
+}
+.section-footer .section-footer-detail .icons svg {
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background-color: #ff0000;
+  color: #fff;
+  margin-left: 5px;
+  padding: 10px;
+}
+.section-footer .section-footer-detail img {
+  position: relative;
+  top: -7px;
+}/*# sourceMappingURL=home.css.map */

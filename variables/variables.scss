@@ -1,0 +1,33 @@
+//colors
+$primary:rgb(190, 184, 184);
+$secondary:#000;
+$ghostColor:#f8f8ff;
+$whitesmokeColor:#f5f5f5;
+$whiteColor:#fff;
+$fontFamily:sans serif;
+
+// background radientand linear
+
+$backgroundRadiant :linear-radiant(#c0c0c0,#f8f8ff);
+
+$backgroundLinear:linear-gradient(#f8f8ff,#c0c0c0);
+
+//backgroundcolor
+
+$backgroundColor:blueviolet;
+
+//padding
+
+ $padding : 5px 50px 5px;
+
+// mixin button
+@mixin button{
+      text-decoration: none;
+      background: transparent;
+      color:#000;
+      padding:$padding;
+      border: 1px solid #333;
+      font-size:17px;
+      
+}
+
